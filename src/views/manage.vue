@@ -1,7 +1,9 @@
 <template>
+  <div>
+    <!-- Your existing navigation bar code -->
     <nav class="navbar navbar-dark bg-black fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Lowkey Dev</a>
+        <a class="navbar-brand" href="#">Dev</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -32,6 +34,7 @@
                 </ul>
               </li>
             </ul>
+            
             <form class="d-flex mt-3" role="search">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
               <button class="btn btn-success" type="submit">Search</button>
@@ -40,17 +43,31 @@
         </div>
       </div>
     </nav>
-    <div class="d-flex justify-content-center align-items-center custom-bg-color" style="min-height: calc(100vh - 56px);"> <!-- 56px is the height of the fixed-top navbar -->
-      <h1 class="text-white">THIS IS OUR MANAGE PAGE</h1>
+
+    <!-- Your manage page content -->
+    <div class="d-flex flex-column justify-content-center align-items-center custom-bg-color" style="min-height: calc(100vh - 56px);">
+      <h2 class="text-white mb-4">THIS IS OUR MANAGE PAGE</h2> <!-- Add margin-bottom class to create space -->
+      
+      <!-- Add the buttons here -->
+      <div class="d-flex justify-content-center">
+        <button type="button" class="btn btn-outline-primary mx-2">Primary</button> <!-- Add margin around each button -->
+        <button type="button" class="btn btn-outline-secondary mx-2">Secondary</button>
+        <a type="button" href="/" class="btn btn-outline-success mx-2">Success</a>
+        <button type="button" class="btn btn-outline-danger mx-2">Danger</button>
+        <button type="button" class="btn btn-outline-warning mx-2">Warning</button>
+        <button type="button" class="btn btn-outline-info mx-2">Info</button>
+        <button type="button" class="btn btn-outline-light mx-2">Light</button>
+        <button type="button" class="btn btn-outline-dark mx-2">Dark</button>
+      </div>
     </div>
-  </template>
-  
-  <style>
-    /* Define a custom background color */
-    .custom-bg-color {
-      background-color: #35465b; /* Replace with your desired combined color */
-    }
-  
-    /* Add any additional custom styling as needed */
-  </style>
-  
+  </div>
+</template>
+
+<style>
+  /* Define a custom background color */
+  .custom-bg-color {
+    background-color: #262727; /* Replace with your desired background color */
+  }
+
+  /* Add any additional custom styling as needed */
+</style>
